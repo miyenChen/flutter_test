@@ -37,19 +37,21 @@ class _MyAppState extends State<MyApp> {
           ),
           //下方導欄列，最少要兩個項目，可設定顏色、大小、名稱、icon
           bottomNavigationBar: BottomNavigationBar(
-            items: [
+            items: const [
               BottomNavigationBarItem(
                   label: "home",
                   icon: Icon(
                     Icons.home,
-                    color: Colors.pink[300],
-                    size: 24.0,
                   )),
               BottomNavigationBarItem(
                 label: "setting",
-                icon: Icon(Icons.settings),
+                icon: Icon(
+                  Icons.settings,
+                ),
               )
             ],
+            //正在活動的 bottom nav item
+            currentIndex: 0,
           ),
         ));
   }
