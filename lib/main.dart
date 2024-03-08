@@ -17,7 +17,14 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text('First Route'),
           ),
-          body: const Center(child: Text("body")),
+          body: Center(
+            child: ElevatedButton(
+              child: Text('ElevatedButton'),
+              onPressed: () {
+                print("hi");
+              },
+            ),
+          ),
           //下方導欄列，最少要兩個項目，可設定顏色、大小、名稱、icon
           bottomNavigationBar: BottomNavigationBar(
             items: [
