@@ -6,6 +6,7 @@ void main() {
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -28,7 +29,9 @@ class _MyAppState extends State<MyApp> {
               //用變數的值為按鈕名稱
               child: Text(buttonName),
               onPressed: () {
-                print("hi");
+                setState(() {
+                  buttonName = "hello";
+                });
               },
             ),
           ),
