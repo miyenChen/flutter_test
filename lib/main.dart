@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: const Text('First Route'),
           ),
-          body: Text("body"),
+          body: const Center(child: Text("body")),
           //下方導欄列，最少要兩個項目，可設定顏色、大小、名稱、icon
           bottomNavigationBar: BottomNavigationBar(
             items: [
@@ -29,7 +29,9 @@ class MyApp extends StatelessWidget {
                     size: 24.0,
                   )),
               BottomNavigationBarItem(
-                  label: "setting", icon: Icon(Icons.settings))
+                label: "setting",
+                icon: Icon(Icons.settings),
+              )
             ],
           ),
         ));
