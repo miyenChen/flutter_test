@@ -26,14 +26,27 @@ class _MyAppState extends State<MyApp> {
             title: const Text('First Route'),
           ),
           body: Center(
-            child: ElevatedButton(
-              //用變數的值為按鈕名稱
-              child: Text(buttonName),
-              onPressed: () {
-                setState(() {
-                  buttonName = "hello";
-                });
-              },
+            child: Column(
+              children: [
+                ElevatedButton(
+                  //用變數的值為按鈕名稱
+                  child: Text(buttonName),
+                  onPressed: () {
+                    setState(() {
+                      buttonName = "hello";
+                    });
+                  },
+                ),
+                ElevatedButton(
+                  //用變數的值為按鈕名稱
+                  child: Text(buttonName),
+                  onPressed: () {
+                    setState(() {
+                      buttonName = "hello";
+                    });
+                  },
+                ),
+              ],
             ),
           ),
           //下方導欄列，最少要兩個項目，可設定顏色、大小、名稱、icon
